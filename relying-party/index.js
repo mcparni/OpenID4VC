@@ -274,7 +274,7 @@ app.get('/user', (req, res) => {
   res.redirect("/");
 });
 
-app.get('/redirect', (req, res, next) => {
+app.get('/redirect', async (req, res, next) => {
   console.log(`------------`);
   console.log("redirect_uri: ")
   console.log(req.url)
@@ -302,7 +302,7 @@ app.get('/redirect', (req, res, next) => {
       'Authorization' : "Basic " + sec
     }
   })
-  .then(function (response) {
+  .then(async (response) => {
     req.session.accessToken = response.data.access_token;
     req.session.idToken = response.data.id_token;
     console.log(`------------`);
@@ -310,15 +310,20 @@ app.get('/redirect', (req, res, next) => {
     console.log(`------------`);
     console.log(`ID Token: ${req.session.idToken}`);
     console.log(`------------`);
-    req.session.authenticated = true;
-    res.redirect("/user")
+    const idToken = response.data.id_token || undefined;
+    const validIdTokenSignature = await parseJwt(idToken);
+    if(!validIdTokenSignature) {
+      return res.redirect(`/?error=Invalid Signature&error_description=The id token signature is invalid`);
+    } else {
+      req.session.authenticated = true;
+      res.redirect("/user");
+    }
   })
-  .catch(function (error) {
+  .catch((error) => {
     //console.log(error);
     req.session.error = error;
     res.redirect("/error");
   });
-
 });
 
 const vcIssuerPolicies = {
