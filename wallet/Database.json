@@ -1,31 +1,4 @@
 {
-    "credentials": [
-        {
-            "id": "33af7fe1-e384-4696-9c0e-241862635b20",
-            "issuer": "did:ion:EiBAtbiEe2qtLsa5a9_fgPQDUAtxBKXLvpI6Lvpkdrcobg",
-            "iat": 1684163643,
-            "type": [
-                "VerifiableCredential",
-                "IDCardCredential"
-            ],
-            "credentialSubject": {
-                "given_name": "Tim",
-                "family_name": "Family",
-                "date_of_birth": "11-02-1912"
-            },
-            "jwt": "eyJraWQiOiJkaWQ6aW9uOkVpQkF0YmlFZTJxdExzYTVhOV9mZ1BRRFVBdHhCS1hMdnBJNkx2cGtkcmNvYmcja2V5LTEiLCJhbGciOiJFUzI1NksiLCJ0eXAiOiJ2Yytqd3QifQ.eyJpc3MiOiJkaWQ6aW9uOkVpQkF0YmlFZTJxdExzYTVhOV9mZ1BRRFVBdHhCS1hMdnBJNkx2cGtkcmNvYmciLCJuYmYiOjE2ODQxNjM2NDMsImlhdCI6MTY4NDE2MzY0MywianRpIjoiZGlkOmlvbjpFaUJBdGJpRWUycXRMc2E1YTlfZmdQUURVQXR4QktYTHZwSTZMdnBrZHJjb2JnLTQ1ODM3OTdlLTJhZGMtNGViYi05MTAxLWY1YmRhNTM0NmE0ZSIsInN1YiI6ImRpZDppb246RWlBWkY4RVVzUkt2a3VxUWVBdnRoYThXbnhGYTJWbEszTTdYd0oxRXNPZkV2QSIsInZjIjp7IkBjb250ZXh0IjpbImh0dHBzOi8vd3d3LnczLm9yZy8yMDE4L2NyZWRlbnRpYWxzL3YxIiwiaHR0cHM6Ly93d3cudzMub3JnLzIwMTgvY3JlZGVudGlhbHMvZXhhbXBsZXMvdjEiXSwidHlwZSI6WyJWZXJpZmlhYmxlQ3JlZGVudGlhbCIsIklEQ2FyZENyZWRlbnRpYWwiXSwiY3JlZGVudGlhbFN1YmplY3QiOnsiZ2l2ZW5fbmFtZSI6IlRpbSIsImZhbWlseV9uYW1lIjoiRmFtaWx5IiwiZGF0ZV9vZl9iaXJ0aCI6IjExLTAyLTE5MTIifX19.Lhj7q_o2YC-WhxEHTe_b_l6fDO19r0NoykWXhvnEIg9dfbfHC_i2qQQN9-Xt9L8xm-ez-9vjoh5wIJJZCNCkZw"
-        }
-    ],
-    "connections": [
-        {
-            "id": "4d4ba714-f601-42de-b149-c35e2186b8a5",
-            "date": 1684163670,
-            "did": "did:ion:EiBr3cl0yOq4TDkQ-AioibD8NF2Miml3BQ-40smk5Viu0Q"
-        },
-        {
-            "id": "a224abbd-40ab-4fbb-8195-8b215452be1d",
-            "date": 1684163679,
-            "did": "did:ion:EiBQsxvT1tz0Cz7KEfFuJhJt_134d_suJlwZ3S_bXVnoBA"
-        }
-    ]
+    "credentials": [],
+    "connections": []
 }
